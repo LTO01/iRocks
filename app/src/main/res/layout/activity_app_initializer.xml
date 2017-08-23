@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_dark"
+    tools:context="rubicon.iky.com.ikyrocks.AppInitializer">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ic_icon_white" />
+
+    <TextView
+        android:id="@+id/lbStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Planetary alignment underway.... please be patient"
+        android:textColor="@color/icons"
+        android:textSize="12sp" />
+
+    <com.comix.overwatch.HiveProgressView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/prg"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        app:hive_animDuration="5000"
+        app:hive_color="@color/icons"
+        app:hive_cornerRadius="10"
+        app:hive_maxAlpha="255"
+        app:hive_rainbow="false"
+        app:hive_shrink="true" />
+
+</RelativeLayout>
